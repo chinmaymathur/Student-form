@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="card-title text-center">Student Registration Form</h1>
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="firstName">First Name<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="firstName" name="firstName">
+                        <div class="text-danger" id="firstName-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="middleName">Middle Name</label>
+                        <input type="text" class="form-control" id="middleName" name="middleName">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email<span class="text-danger">*</span></label>
+                        <input type="email" class="form-control" id="email" name="email">
+                        <div class="text-danger" id="email-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Contact Number<span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" id="contact" name="contact">
+                        <div class="text-danger" id="contact-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password<span class="text-danger">*</span></label>
+                        <input type="password" class="form-control" id="password" name="password">
+                        <div class="text-danger" id="password-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Gender<span class="text-danger">*</span></label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="male" name="gender" value="male">
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="female" name="gender" value="female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" id="other" name="gender" value="other">
+                            <label class="form-check-label" for="other">Other</label>
+                        </div>
+                        <div class="text-danger" id="gender-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label>Hobbies</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="reading" name="hobbies" value="reading">
+                            <label class="form-check-label" for="reading">Reading</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="sports" name="hobbies" value="sports">
+                            <label class="form-check-label" for="sports">Sports</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="music" name="hobbies" value="music">
+                            <label class="form-check-label" for="music">Music</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="dance" name="hobbies" value="dance">
+                            <label class="form-check-label" for="dance">Dance</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="coding" name="hobbies" value="coding">
+                            <label class="form-check-label" for="coding">Coding</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City<span class="text-danger">*</span></label>
+                        <select class="form-control" id="city" name="city">
+                            <option value="">Select City</option>
+                            <option value="jaipur">Jaipur</option>
+                            <option value="jodhpur">Jodhpur</option>
+                            <option value="udaipur">Udaipur</option>
+                            <option value="bikaner">Bikaner</option>
+                            <option value="ajmer">Ajmer</option>
+                            <option value="bundi">Bundi</option>
+                            <option value="kota">Kota</option>
+                            <option value="chittorgarh">Chittorgarh</option>
+                            <option value="bhilwara">Bhilwara</option>
+                            <option value="merta-city">Merta City</option>
+                            
+                        </select>
+                        <div class="text-danger" id="city-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea class="form-control" id="address" name="address"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" class="form-control" id="dob" name="dob">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                </form>
+                <p id="form-error-message" class="text-danger mt-3"></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
